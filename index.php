@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<?php $software_version="1.0.0"
+<?php $software_version="1.0.0";
 include('config.php');
 ?>
 <html lang="en">
@@ -76,7 +76,7 @@ include('config.php');
     $ctext=$_GET['ctext'];
     $usercreatepostpassword=$_GET['pwd'];
     if(
-        $usercreatepostpassword==$config['BLOG_PWD'];
+        $usercreatepostpassword==$config['BLOG_PWD']
     ){
         if($ctitle=="del"){
             $queryforpostcreation="DELETE FROM `posts` WHERE `posts`.`id` = ".$ctext;
